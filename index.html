@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tiamat</title>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="icon" href="img/logow.png">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+		integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header">
+			<div class="header__top ">
+				<div class="row container header__top-container">
+					<div class="header__top-item header__top-item_1 col-sm-6 col-md-4 col-lg-3 ">
+						<a class="header__logo" href="#!"><img src="img/logow.png" alt="Логотип сайта"></a>
+					</div>
+					<div class="header__top-item header__top-item_2 col-sm-6 col-md-4 col-lg-3">
+						<p class="header__top-text"> <span>Акриловые герметики,клеи, наливные полы</span> для
+							автомобилей, строек и промышленности</p>
+					</div>
+					<div class="header__top-item header__top-item_3 col-sm-6 col-md-4 col-lg-3">
+						<form class="header__top-search">
+							<input class="form-control header__top-input" type="search" placeholder="Поиск по товарам"
+								aria-label="Search">
+							<button class="btn header__top-search__btn" type="submit">
+								<svg viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+									<path fill-rule="evenodd"
+										d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+								</svg>
+							</button>
+						</form>
+					</div>
+					<div class="header__top-item header__top-item_4 col-sm-6 col-md-4 col-lg-3">
+						<div class="card header-card">
+							<div class="card-body header-card__body">
+								<a href="" class="card-btn btn header__top-btn"></a>
+								<a href="" class="card-link">+7 831 214 06 14
+									<span class="card-text">Заказать обратный звонок</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-expand-lg header-nav">
+				<div class="header-nav__container container">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar"
+						aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon fa fa-bars">
+						</span>
+					</button>
+					<div class="collapse navbar-collapse" id="navBar">
+						<ul class="navbar-nav header-nav__list">
+							<li class="nav-item dropdown header-nav__dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-toggle="dropdown" aria-expanded="false">
+									<span></span>
+									Каталог товаров
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="#">Для дома</a></li>
+									<li><a class="dropdown-item" href="#">Для строек</a></li>
+									<li><a class="dropdown-item" href="#">Для авто</a></li>
+									<li><a class="dropdown-item" href="#">Для промышленности</a></li>
+								</ul>
+							</li>
+							<li class="nav-item header-nav__item">
+								<a class="nav-link" aria-current="page" href="#">Бренды</a>
+							</li>
+							<li class="nav-item header-nav__item">
+								<a class="nav-link" href="#">О компании</a>
+							</li>
+							<li class="nav-item header-nav__item">
+								<a class="nav-link" href="#">Технологии</a>
+							</li>
+							<li class="nav-item header-nav__item">
+								<a class="nav-link" href="#">Акции</a>
+							</li>
+							<li class="nav-item header-nav__item">
+								<a class="nav-link" href="#">Доставка и оплата</a>
+							</li>
+							<li class="nav-item header-nav__item">
+								<a class="nav-link" href="#">Советы</a>
+							</li>
+							<li class="nav-item header-nav__item">
+								<a class="nav-link" href="#">Контакты</a>
+							</li>
+							<li class="nav-item header-nav__item">
+								<a class="nav-link" href="#">
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-circle"
+										fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
+										<path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+										<path fill-rule="evenodd"
+											d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+									</svg>
+								</a>
+								<a class="nav-link" href="#">
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart"
+										fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd"
+											d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Main content -->
+		<main class="page">
+			<!-- big slider -->
+			<div class="page__slider slider-page">
+				<div class="slider-page__wrapper container">
+					<div class="slider-page__slider swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="slider-page__item">
+									<div class="slider-page__info">
+										<div class="slider-page__title">
+											Акриловый герметик
+										</div>
+										<div class="slider-page__subtitle">
+											для деревянных домов и бань
+										</div>
+										<div class="slider-page__specifications slider-specifications">
+											<div class="slider-specifications__item">
+												<div class="slider-specifications__icon">
+													<img src="img/icons/01.png" alt="">
+												</div>
+												<div class="slider-specifications__text">Хорошая адгезия к дереву,
+													кирпичу и бетону</div>
+											</div>
+											<div class="slider-specifications__item">
+												<div class="slider-specifications__icon">
+													<img src="img/icons/03.png" alt="">
+												</div>
+												<div class="slider-specifications__text">Можно наносить при -10, и на
+													влажную стену. </div>
+											</div>
+										</div>
+										<div class="slider-page__price">
+											от <span>290</span> руб/кг
+										</div>
+									</div>
+									<div class="slider-page__image">
+										<img class="page-slider__img" src="img/sliders/01.png" alt="slider-image">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slider-page__item">
+									<div class="slider-page__info">
+										<div class="slider-page__title">
+											Акриловый герметик
+										</div>
+										<div class="slider-page__subtitle">
+											для деревянных домов и бань
+										</div>
+										<div class="slider-page__specifications slider-specifications">
+											<div class="slider-specifications__item">
+												<div class="slider-specifications__icon">
+													<img src="img/icons/01.png" alt="">
+												</div>
+												<div class="slider-specifications__text">Хорошая адгезия к дереву,
+													кирпичу и бетону</div>
+											</div>
+											<div class="slider-specifications__item">
+												<div class="slider-specifications__icon">
+													<img src="img/icons/03.png" alt="">
+												</div>
+												<div class="slider-specifications__text">Можно наносить при -10, и на
+													влажную стену. </div>
+											</div>
+										</div>
+										<div class="slider-page__price">
+											от <span>500</span> руб/кг
+										</div>
+									</div>
+									<div class="slider-page__image">
+										<img class="page-slider__img" src="img/sliders/01.png" alt="slider-image">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slider-page__item">
+									<div class="slider-page__info">
+										<div class="slider-page__title">
+											Акриловый герметик
+										</div>
+										<div class="slider-page__subtitle">
+											для деревянных домов и бань
+										</div>
+										<div class="slider-page__specifications slider-specifications">
+											<div class="slider-specifications__item">
+												<div class="slider-specifications__icon">
+													<img src="img/icons/01.png" alt="">
+												</div>
+												<div class="slider-specifications__text">Хорошая адгезия к дереву,
+													кирпичу и бетону</div>
+											</div>
+											<div class="slider-specifications__item">
+												<div class="slider-specifications__icon">
+													<img src="img/icons/03.png" alt="">
+												</div>
+												<div class="slider-specifications__text">Можно наносить при -10, и на
+													влажную стену. </div>
+											</div>
+										</div>
+										<div class="slider-page__price">
+											от <span>1000</span> руб/кг
+										</div>
+									</div>
+									<div class="slider-page__image">
+										<img class="page-slider__img" src="img/sliders/01.png" alt="slider-image">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slider-page__item">
+									<div class="slider-page__info">
+										<div class="slider-page__title">
+											Акриловый герметик
+										</div>
+										<div class="slider-page__subtitle">
+											для деревянных домов и бань
+										</div>
+										<div class="slider-page__specifications slider-specifications">
+											<div class="slider-specifications__item">
+												<div class="slider-specifications__icon">
+													<img src="img/icons/01.png" alt="">
+												</div>
+												<div class="slider-specifications__text">Хорошая адгезия к дереву,
+													кирпичу и бетону</div>
+											</div>
+											<div class="slider-specifications__item">
+												<div class="slider-specifications__icon">
+													<img src="img/icons/03.png" alt="">
+												</div>
+												<div class="slider-specifications__text">Можно наносить при -10, и на
+													влажную стену. </div>
+											</div>
+										</div>
+										<div class="slider-page__price">
+											от <span>1000</span> руб/кг
+										</div>
+									</div>
+									<div class="slider-page__image">
+										<img class="page-slider__img" src="img/sliders/01.png" alt="slider-image">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination section-slider__pagination ">
+							<span class="section-slider__pagination-item section-slider__pagination-item_white"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- second slider -->
+			<div class="page__sales sales-page">
+				<div class="sales-page__container container">
+					<div class="section-page__header">
+						<div class="section-page__title">
+							<img src="img/icons/02.png" alt="">
+							Хиты продаж
+						</div>
+						<span class="section-page__header-line"></span>
+						<a href="#" class="section-page__btn">
+							Все товары
+						</a>
+					</div>
+					<div class="sales-page__slider-wrapper">
+						<div class="sales-page__slider swiper-container sales-slider">
+							<div class="sales-slider__arrow sales-slider__arrow_prev">
+								<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+									fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+								</svg>
+							</div>
+							<div class="sales-slider__arrow sales-slider__arrow_next">
+								<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+									fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+								</svg>
+							</div>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide sales-slider__column">
+									<div class="sales-slider__item">
+										<div class="sales-slider__card card">
+											<img src="img/sliders/02.png" class="card-img-top sales-slider__card-img"
+												alt="Sales Slider image">
+											<div class="sales-slider__card-body card-body">
+												<p class="sales-slider__text card-text">Герметик акриловый для дерева
+													Tiamat A-125, 300 мл. картридж</p>
+												<div class="sales-slider__price">1200 руб/шт</div>
+												<div class="sales-slider__access">Доступон 13 цветов</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide sales-slider__column">
+									<div class="sales-slider__item">
+										<div class="sales-slider__card card">
+											<img src="img/sliders/02.png" class="card-img-top sales-slider__card-img"
+												alt="Sales Slider image">
+											<div class="sales-slider__card-body card-body">
+												<p class="sales-slider__text card-text">Герметик акриловый для дерева
+													Tiamat A-125, 300 мл. картридж</p>
+												<div class="sales-slider__price">1200 руб/шт</div>
+												<div class="sales-slider__access">Доступон 13 цветов</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide sales-slider__column">
+									<div class="sales-slider__item">
+										<div class="sales-slider__card card">
+											<img src="img/sliders/02.png" class="card-img-top sales-slider__card-img"
+												alt="Sales Slider image">
+											<div class="sales-slider__card-body card-body">
+												<p class="sales-slider__text card-text">Герметик акриловый для дерева
+													Tiamat A-125, 300 мл. картридж</p>
+												<div class="sales-slider__price">1200 руб/шт</div>
+												<div class="sales-slider__access">Доступон 13 цветов</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide sales-slider__column">
+									<div class="sales-slider__item">
+										<div class="sales-slider__card card">
+											<img src="img/sliders/02.png" class="card-img-top sales-slider__card-img"
+												alt="Sales Slider image">
+											<div class="sales-slider__card-body card-body">
+												<p class="sales-slider__text card-text">Герметик акриловый для дерева
+													Tiamat A-125, 300 мл. картридж</p>
+												<div class="sales-slider__price">1200 руб/шт</div>
+												<div class="sales-slider__access">Доступон 13 цветов</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide sales-slider__column">
+									<div class="sales-slider__item">
+										<div class="sales-slider__card card">
+											<img src="img/sliders/02.png" class="card-img-top sales-slider__card-img"
+												alt="Sales Slider image">
+											<div class="sales-slider__card-body card-body">
+												<p class="sales-slider__text card-text">Герметик акриловый для дерева
+													Tiamat A-125, 300 мл. картридж</p>
+												<div class="sales-slider__price">1200 руб/шт</div>
+												<div class="sales-slider__access">Доступон 13 цветов</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination section-slider__pagination sales-slider__paggination">
+								<span class="section-slider__pagination-item"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- third slider -->
+			<div class="page__categories categories-page">
+				<div class="categories-page__container container">
+					<div class="section-page__header">
+						<div class="section-page__title">
+							<img src="img/icons/04.png" alt="">
+							Популярные категории
+						</div>
+						<span class="section-page__header-line categories-page__header-line"></span>
+						<a href="#" class="section-page__btn">
+							Все категории
+						</a>
+					</div>
+					<div class="categories-page__slider">
+						<div class="categories-page__slider-body categories-slider swiper-container">
+							<div class="sales-slider__arrow sales-slider__arrow_prev categories-page__arrow_prev">
+								<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+									fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+								</svg>
+							</div>
+							<div class="sales-slider__arrow sales-slider__arrow_next categories-page__arrow_next">
+								<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+									fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+								</svg>
+							</div>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="slider-page__item">
+										<div class="slider-page__info">
+											<div class="slider-page__title">
+												Для строек
+											</div>
+											<div class="slider-page__subtitle">
+												Какой-нибудь текст
+												пояснящий будет тут
+											</div>
+											<a href="#" class="section-page__btn">
+												Подробнее
+											</a>
+										</div>
+										<img class="categories-slider__img" src="img/sliders/03.png" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slider-page__item slider-page__item_2">
+										<div class="slider-page__info">
+											<div class="slider-page__title">
+												Для промышленности
+											</div>
+											<div class="slider-page__subtitle">
+												Какой-нибудь текст
+												пояснящий будет тут
+											</div>
+											<a href="#" class="section-page__btn">
+												Подробнее
+											</a>
+										</div>
+										<img class="categories-slider__img" src="img/sliders/04.png" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slider-page__item">
+										<div class="slider-page__info">
+											<div class="slider-page__title">
+												Для автомобилей
+											</div>
+											<div class="slider-page__subtitle">
+												Какой-нибудь текст
+												пояснящий будет тут
+											</div>
+											<a href="#" class="section-page__btn section-page__btn_blue">
+												Подробнее
+											</a>
+										</div>
+										<img class="categories-slider__img" src="img/sliders/05.png" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slider-page__item slider-page__item_3">
+										<div class="slider-page__info">
+											<div class="slider-page__title">
+												Для строек
+											</div>
+											<div class="slider-page__subtitle">
+												Какой-нибудь текст
+												пояснящий будет тут
+											</div>
+											<a href="#" class="section-page__btn">
+												Подробнее
+											</a>
+										</div>
+										<img class="categories-slider__img" src="img/sliders/03.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination section-slider__pagination categories-slider__pagination">
+								<span class="section-slider__pagination-item"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- fourth slider -->
+			<div class="page__stocks stocks-page">
+				<div class="stocks-page__container container">
+					<div class="section-page__header">
+						<div class="section-page__title">
+							<img src="img/icons/05.png" alt="">
+							Товары по акции
+						</div>
+						<span class="section-page__header-line"></span>
+						<a href="#" class="section-page__btn">
+							Все товары
+						</a>
+					</div>
+					<div class="sales-page__slider-wrapper">
+						<div class="sales-page__slider swiper-container sales-slider">
+							<div class="sales-slider__arrow sales-slider__arrow_prev">
+								<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+									fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+								</svg>
+							</div>
+							<div class="sales-slider__arrow sales-slider__arrow_next">
+								<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+									fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+								</svg>
+							</div>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide sales-slider__column">
+									<div class="sales-slider__item">
+										<div class="sales-slider__card card">
+											<img src="img/sliders/06.png" class="card-img-top sales-slider__card-img"
+												alt="Sales Slider image">
+											<div class="sales-slider__card-body card-body">
+												<p class="sales-slider__text card-text">Герметик акриловый для дерева
+													Tiamat A-125, ведро 5л (7кг)</p>
+												<div class="sales-slider__price">1700 руб/шт</div>
+												<div class="sales-slider__access">1950руб/шт</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide sales-slider__column">
+									<div class="sales-slider__item">
+										<div class="sales-slider__card card">
+											<img src="img/sliders/06.png" class="card-img-top sales-slider__card-img"
+												alt="Sales Slider image">
+											<div class="sales-slider__card-body card-body">
+												<p class="sales-slider__text card-text">Герметик акриловый для дерева
+													Tiamat A-125, ведро 5л (7кг)</p>
+												<div class="sales-slider__price">1700 руб/шт</div>
+												<div class="sales-slider__access">1950руб/шт</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide sales-slider__column">
+									<div class="sales-slider__item">
+										<div class="sales-slider__card card">
+											<img src="img/sliders/06.png" class="card-img-top sales-slider__card-img"
+												alt="Sales Slider image">
+											<div class="sales-slider__card-body card-body">
+												<p class="sales-slider__text card-text">Герметик акриловый для дерева
+													Tiamat A-125, ведро 5л (7кг)</p>
+												<div class="sales-slider__price">1700 руб/шт</div>
+												<div class="sales-slider__access">1950руб/шт</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide sales-slider__column">
+									<div class="sales-slider__item">
+										<div class="sales-slider__card card">
+											<img src="img/sliders/06.png" class="card-img-top sales-slider__card-img"
+												alt="Sales Slider image">
+											<div class="sales-slider__card-body card-body">
+												<p class="sales-slider__text card-text">Герметик акриловый для дерева
+													Tiamat A-125, ведро 5л (7кг)</p>
+												<div class="sales-slider__price">1700 руб/шт</div>
+												<div class="sales-slider__access">1950руб/шт</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide sales-slider__column">
+									<div class="sales-slider__item">
+										<div class="sales-slider__card card">
+											<img src="img/sliders/06.png" class="card-img-top sales-slider__card-img"
+												alt="Sales Slider image">
+											<div class="sales-slider__card-body card-body">
+												<p class="sales-slider__text card-text">Герметик акриловый для дерева
+													Tiamat A-125, ведро 5л (7кг)</p>
+												<div class="sales-slider__price">1700 руб/шт</div>
+												<div class="sales-slider__access">1950руб/шт</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination section-slider__pagination stocks-slider__pagination">
+								<span class="section-slider__pagination-item"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- fifth slider -->
+			<div class="page__blog blog-page">
+				<div class="blog-page__container container">
+					<div class="section-page__header">
+						<div class="section-page__title">
+							<img src="img/icons/06.png" alt="">
+							Блог
+						</div>
+						<span class="section-page__header-line"></span>
+						<a href="#" class="section-page__btn">
+							Все товары
+						</a>
+					</div>
+					<div class="blog-page__slider">
+						<div class="blog-page__slider-container swiper-container">
+							<div class="blog-page__slider-arrow blog-page__slider-arrow_prev">
+								<svg viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+								</svg>
+							</div>
+							<div class="blog-page__slider-arrow blog-page__slider-arrow_next">
+								<svg viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+								</svg>
+							</div>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="blog-page__slider-card card">
+										<iframe src="https://www.youtube.com/embed/DmfyvCJwyNU" frameborder="0"
+											allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen></iframe>
+										<div class="card-body">
+											<h5 class="card-title">Как правильно наносить герметик на влажную
+												поверхность </h5>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="blog-page__slider-card card">
+										<iframe src="https://www.youtube.com/embed/DmfyvCJwyNU" frameborder="0"
+											allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen></iframe>
+										<div class="card-body">
+											<h5 class="card-title">Видео - как правильно наносить герметик на влажную
+												поверхность</h5>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="blog-page__slider-card card">
+										<iframe src="https://www.youtube.com/embed/6uoLTidOMms" frameborder="0"
+											allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen></iframe>
+										<div class="card-body">
+											<h5 class="card-title">Подбираем медную трубу для кондиционера </h5>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="blog-page__slider-card card">
+										<iframe src="https://www.youtube.com/embed/gf4BdCQObes" frameborder="0"
+											allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen></iframe>
+										<div class="card-body">
+											<h5 class="card-title">Как правильно наносить герметик на влажную
+												поверхность </h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination section-slider__pagination blog-slider__pagination">
+								<span class="section-slider__pagination-item"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__services services-page">
+				<div class="services-page__wrapper">
+					<div class="services-page__container container row">
+						<div class="services-page__column col-sm-6 col-lg-3">
+							<div class="services-page__item">
+								<div class="services-page__icon">
+									<img src="img/icons/07.png" alt="">
+								</div>
+								<div class="services-page__info">
+									<div class="services-page__title">
+										Гарантия качества
+									</div>
+									<div class="services-page__text">
+										Все товары в нашем каталоге имеют гарантию производителя
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="services-page__column col-sm-6 col-lg-3">
+							<div class="services-page__item">
+								<div class="services-page__icon">
+									<img src="img/icons/08.png" alt="">
+								</div>
+								<div class="services-page__info">
+									<div class="services-page__title">
+										Бесплатная доставка
+									</div>
+									<div class="services-page__text">
+										Бесплатная доставка по всем регионам России
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="services-page__column col-sm-6 col-lg-3">
+							<div class="services-page__item">
+								<div class="services-page__icon">
+									<img src="img/icons/09.png" alt="">
+								</div>
+								<div class="services-page__info">
+									<div class="services-page__title">
+										Обмен и возврат
+									</div>
+									<div class="services-page__text">
+										Мы даем до 30 дней на обмен и возврат товара
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="services-page__column col-sm-6 col-lg-3">
+							<div class="services-page__item">
+								<div class="services-page__icon">
+									<img src="img/icons/10.png" alt="">
+								</div>
+								<div class="services-page__info">
+									<div class="services-page__title">
+										Поддержка клиентов
+									</div>
+									<div class="services-page__text">
+										Мы дорожим мнением каждого клиента
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__about about-page">
+				<div class="about-page__container container">
+					<div class="about-page__title">
+						Интернет-магазин по акриловым герметикам, клеям, наливным полам для машин, строек и
+						промышленности
+					</div>
+					<div class="about-page__text">
+						Если у вас остались вопросы, специалисты магазина готовы профессионально проконсультировать по
+						поводу выбора, оплаты, доставки товаров по телефонам:
+					</div>
+					<div class="about-page__numbers">
+						<a href="tel:+78312140614" class="about-page__number">
+							+7 831 214 06 14;
+						</a>
+						<a href="tel:+78312140614" class="about-page__number">
+							+7 831 214 06 14;
+						</a>
+					</div>
+					<div class="about-page__text ">
+						Интернет-магазин Tiamat предлагает следующие изделия:
+					</div>
+					<ul class="about-page__list">
+						<li class="about-page__text">
+							<span> Акриловые герметики</span> — По своей сути рыбатекст является альтернативой
+							традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках
+							прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой
+							макет непонятным смыслом и придаст неповторимый колорит советских времен.
+						</li>
+						<li class="about-page__text">
+							<span>Различные клеи </span> идейные соображения высшего порядка, а также начало
+							повседневной работы по формированию позиции позволяет выполнять важные задания по разработке
+							новых предложений.
+						</li>
+						<li class="about-page__text">
+							<span>Наливные полы</span> равным образом рамки и место обучения кадров в значительной
+							степени обуславливает создание модели развития. Разнообразный и богатый опыт постоянный
+							количественный рост и сфера нашей активности требуют определения и уточнения форм развития.
+							Значимость этих проблем настолько очевидна, что консультация с широким активом обеспечивает
+							широкому кругу (специалистов) участие в формировании дальнейших направлений развития.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="page__mailing mailing-page">
+				<div class="mailing-page__wrapper">
+					<div class="mailing-page__container container row">
+						<div class="mailing-page__column col-md-4 col-lg-4">
+							<div class="mailing-page__item">
+								<div class="mailing-page__text">
+									Подпишитесь на рассылку
+									<span>и будьте в курсе всех акций нашего магазина</span>
+								</div>
+							</div>
+						</div>
+						<div class="mailing-page__column col-md-5 col-lg-6">
+							<div class="mailing-page__item">
+								<input type="email" class="form-control mailing-page__input" id="mailing-page__input"
+									placeholder="Введите ваш адрес электронной почты">
+							</div>
+						</div>
+						<div class="mailing-page__column col-md-2 col-lg-2">
+							<div class="mailing-page__item">
+								<a href="" class="btn mailing-page__btn">Подписаться</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer__nav nav-footer">
+				<div class="nav-footer__container container row">
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<div class="nav-footer__item">
+							<div class="nav-footer__logo">
+								<img src="img/logow.png" alt="">
+							</div>
+							<div class="nav-footer__text">Равным образом постоянный количественный рост и сфера нашей
+								активности требуют определения и уточнения позиций, занимаемых </div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<div class="nav-footer__item">
+							<div class="nav-footer__title">
+								Категории магазина
+							</div>
+							<ul class="nav-footer__list">
+								<li>
+									<a href="" class="nav-footer__link">Акриловые герметики</a>
+								</li>
+								<li>
+									<a href="" class="nav-footer__link">Клеи герметики</a>
+								</li>
+								<li>
+									<a href="" class="nav-footer__link">Наливные полы</a>
+								</li>
+								<li>
+									<a href="" class="nav-footer__link">Комплектующие</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<div class="nav-footer__item">
+							<div class="nav-footer__title">
+								О компании
+							</div>
+							<ul class="nav-footer__list">
+								<li>
+									<a href="" class="nav-footer__link">Варианты доставки и оплаты</a>
+								</li>
+								<li>
+									<a href="" class="nav-footer__link">Обмен и возврат товара</a>
+								</li>
+								<li>
+									<a href="" class="nav-footer__link">Скачать прайс-лист товаров </a>
+								</li>
+								<li>
+									<a href="" class="nav-footer__link">Политика конфиденциальности</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-3">
+						<div class="nav-footer__item">
+							<div class="nav-footer__title">
+								Контакты
+							</div>
+							<ul class="nav-footer__list nav-footer__list_contacts">
+								<li>
+									<a href="" class="nav-footer__link">
+										<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt-fill"
+											fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd"
+												d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+										</svg>
+										Н.Новгород, ул.Федосеенко 41, 5 </a>
+								</li>
+								<li>
+									<a href="" class="nav-footer__link nav-footer__link_phone">
+										<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill"
+											fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd"
+												d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
+										</svg>
+										+7 831 214 06 14</a>
+								</li>
+								<li>
+									<a href="" class="nav-footer__link">
+										<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock-fill"
+											fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd"
+												d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+										</svg>
+										Пн-Пт: с 9:00 до 18:00 </a>
+								</li>
+								<li>
+									<a href="" class="nav-footer__link">
+										<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill"
+											fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd"
+												d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+										</svg>
+										info@tiamat.ru</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copy copy-footer">
+				<div class="copy-footer__wrapper">
+					<div class="footer-copy__container container row">
+						<div class="col-md-5">
+							<div class="copy-footer__item">
+								<div class="copy-footer__text">
+									Все права защищены. © 2017-2019 ООО «ФОРСАЖЪ»
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 offset-lg-3">
+							<div class="copy-footer__item">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- JavaScript and dependencies -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+		integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+	</script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
